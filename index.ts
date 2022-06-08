@@ -1,11 +1,11 @@
 const nombre="nahuel calveira";
 console.log(`Mi nombre es ${nombre}`)
 
-import {Servidor} from "./classes/server";
-import { router } from "./routes/router";
+import {servidor} from "./classes/server";
+import { router } from "./router/router";
 import cors from "cors";
 
-let server = new Servidor();
+let server = new servidor();
 
 // Credenciales de seguridad
 server.app.use(cors({origin:true, credentials:true}));
